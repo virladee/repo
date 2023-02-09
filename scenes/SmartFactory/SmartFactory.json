@@ -1,0 +1,325 @@
+{
+    "context": {
+        "UnitOfMeasureScale": 0.001,
+        "Zup": false,
+        "RepoPath": ""
+    },
+    "scene": [
+        "InnoLabBuilding",
+        "KUKA_KR3_R540",
+        "UR5e",
+        "MatrixProductionCell_A",
+        "MatrixProductionCell_B",
+        "IGUS",
+        "WeldingTable",
+        "LinakActuator",
+        "ControlCabinet",
+        "ScrewDriver",
+        "",
+        "UnimatLathe",
+        "UnimatMill",
+        "GravityConveyor_1",
+        "GravityConveyor_2",
+        "GravityConveyor_3",
+        "BeltConveyor_1",
+        "BeltConveyor_2",
+        "Printer3D_1",
+        "Printer3D_2",
+        "Igloo",
+        "Cabinet",
+        "Shelf",
+        "ToolStorage",
+        "WorkTable",
+        "Table",
+        "Chair"
+    ],
+    "assets": [
+        {
+            "id": "InnoLabBuilding",
+            "descr": "Lab building",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding",
+            "representations": [
+                {
+                    "file": "InnovationLab.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": "LabSystem",
+            "descr": "Smart Factory Lab (SDU)",
+            "type": "https://w3id.org/ontoeng/factory#ManufacturingSystem"
+        },
+        {
+            "id": "KUKA_KR3_R540",
+            "descr": "KUKA Ready2Educate Advanced Vision",
+            "type": "https://w3id.org/ontoeng/factory#Robot",
+            "placementRelTo": "InnoLabBuilding"
+        },
+        {
+            "id": "UR5e",
+            "descr": "Collaborative Robot",
+            "type": "https://w3id.org/ontoeng/factory#Robot",
+            "placementRelTo": "InnoLabBuilding"
+        },
+        {
+            "id": "MatrixProductionCell_A",
+            "descr": "Contains KUKA robot, UR5e, IGUS 7th axis for UR5e, Siegmund Welding table, Linak LA36 actuator, Custom control cabinet, Kolver Screw Driver",
+            "type": "https://w3id.org/ontoeng/factory#MachineTool",
+            "representations": [
+                {
+                    "file": "MatrixProductionWorkCell_A.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                600,
+                0,
+                4500
+            ],
+            "rotation": [
+                0,
+                1.5707963267949,
+                0
+            ],
+            "placementRelTo": "InnoLabBuilding"
+        },
+        {
+            "id": "MatrixProductionCell_B",
+            "descr": "Contains KUKA robot, UR5e, IGUS 7th axis for UR5e, Siegmund Welding table, Linak LA36 actuator, Custom control cabinet, Kolver Screw Driver",
+            "type": "https://w3id.org/ontoeng/factory#MachineTool",
+            "representations": [
+                {
+                    "file": "MatrixProductionWorkCell_B.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                600,
+                0,
+                4500
+            ],
+            "rotation": [
+                0,
+                1.5707963267949,
+                0
+            ],
+            "placementRelTo": "InnoLabBuilding"
+        },
+        {
+            "id": "MatrixProductionCell_C",
+            "descr": "Contains KUKA robot, UR5e, IGUS 7th axis for UR5e, Siegmund Welding table, Linak LA36 actuator, Custom control cabinet, Kolver Screw Driver",
+            "type": "https://w3id.org/ontoeng/factory#MachineTool",
+            "representations": [
+                {
+                    "file": "MatrixProductionWorkCell_C.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                600,
+                0,
+                4500
+            ],
+            "rotation": [
+                0,
+                1.5707963267949,
+                0
+            ],
+            "placementRelTo": "InnoLabBuilding"
+        },
+        {
+            "id": "IGUS",
+            "descr": "Robot controller for UR5e",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcUnitaryControlElement",
+            "placementRelTo": "InnoLabBuilding"
+        },
+        {
+            "id": "WeldingTable",
+            "descr": "Siegmund Welding table",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "placementRelTo": "InnoLabBuilding"
+        },
+        {
+            "id": "LinakActuator",
+            "descr": "Linak LA36 actuator",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcActuator",
+            "placementRelTo": "InnoLabBuilding"
+        },
+        {
+            "id": "ControlCabinet",
+            "descr": "Custom control cabinet",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcUnitaryControlElement",
+            "placementRelTo": "InnoLabBuilding"
+        },
+        {
+            "id": "ScrewDriver",
+            "descr": "Kolver Screw Driver",
+            "type": "https://w3id.org/ontoeng/factory#Tool",
+            "placementRelTo": "InnoLabBuilding"
+        },
+        {
+            "id": "UnimatLathe",
+            "descr": "Small educational CNC lathe on custom transport carrier",
+            "type": "https://w3id.org/ontoeng/factory#MachineTool",
+            "placementRelTo": "InnoLabBuilding"
+        },
+        {
+            "id": "UnimatMill",
+            "descr": "Small educational CNC mill on custom transport carrier",
+            "type": "https://w3id.org/ontoeng/factory#MachineTool",
+            "placementRelTo": "InnoLabBuilding"
+        },
+        {
+            "id": "GravityConveyor_1",
+            "descr": "gravity conveyor for teaching purposes (P-TECH)",
+            "type": "https://w3id.org/ontoeng/factory#Conveyor",
+            "placementRelTo": "InnoLabBuilding"
+        },
+        {
+            "id": "GravityConveyor_2",
+            "descr": "gravity conveyor for teaching purposes (P-TECH)",
+            "type": "https://w3id.org/ontoeng/factory#Conveyor",
+            "placementRelTo": "InnoLabBuilding"
+        },
+        {
+            "id": "GravityConveyor_3",
+            "descr": "gravity conveyor for teaching purposes (P-TECH)",
+            "type": "https://w3id.org/ontoeng/factory#Conveyor",
+            "placementRelTo": "InnoLabBuilding"
+        },
+        {
+            "id": "BeltConveyor_1",
+            "descr": "belt conveyor for teaching purposes (P-TECH)",
+            "type": "https://w3id.org/ontoeng/factory#Conveyor",
+            "representations": [
+                {
+                    "file": "ConveyorSystem.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                4200,
+                0,
+                13200
+            ],
+            "rotation": [
+                0,
+                -1.5707963267949,
+                0
+            ],
+            "placementRelTo": "InnoLabBuilding"
+        },
+        {
+            "id": "BeltConveyor_2",
+            "descr": "belt conveyor for teaching purposes (P-TECH)",
+            "type": "https://w3id.org/ontoeng/factory#Conveyor",
+            "placementRelTo": "InnoLabBuilding"
+        },
+        {
+            "id": "Printer3D_1",
+            "descr": "Unimat + FlashForge Inventor",
+            "type": "https://w3id.org/ontoeng/factory#MachineTool",
+            "placementRelTo": "InnoLabBuilding"
+        },
+        {
+            "id": "Printer3D_2",
+            "descr": "Unimat + FlashForge Inventor",
+            "type": "https://w3id.org/ontoeng/factory#MachineTool",
+            "placementRelTo": "InnoLabBuilding"
+        },
+        {
+            "id": "Igloo",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "placementRelTo": "InnoLabBuilding"
+        },
+        {
+            "id": "Cabinet",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "placementRelTo": "InnoLabBuilding"
+        },
+        {
+            "id": "Shelf",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "placementRelTo": "InnoLabBuilding"
+        },
+        {
+            "id": "ToolStorage",
+            "type": "https://w3id.org/ontoeng/factory#StorageElement",
+            "placementRelTo": "InnoLabBuilding"
+        },
+        {
+            "id": "WorkTable",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "placementRelTo": "InnoLabBuilding"
+        },
+        {
+            "id": "Table",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "Desk.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                2600,
+                0,
+                13000
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "InnoLabBuilding"
+        },
+        {
+            "id": "Chair",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "Chair.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                2600,
+                0,
+                12600
+            ],
+            "rotation": [
+                0,
+                -1.5707963267949,
+                0
+            ],
+            "placementRelTo": "InnoLabBuilding"
+        },
+        {
+            "id": "ET200SP",
+            "descr": "Siemens PLC"
+        },
+        {
+            "id": "S7-1500",
+            "descr": "Siemens PLC"
+        },
+        {
+            "id": "S7-1200",
+            "descr": "Siemens PLC"
+        },
+        {
+            "id": "X20CP1686",
+            "descr": "B&R PLC"
+        }
+    ]
+}
