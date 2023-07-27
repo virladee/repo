@@ -13,7 +13,7 @@
     "assets": [
         {
             "id": "lab_building",
-            "descr": "Lab building (3D to be updated: only floor and 1 wall)",
+            "descr": "Lab building",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding",
             "representations": [
                 {
@@ -34,12 +34,12 @@
         },
         {
             "id": "RoboticLab",
-            "descr": "The IINFORM (Intelligent INdustrial robotics FOR Manufacturing) Lab has the mission of studying innovative solutions to control the tasks performed by robots by merging the perceptual aspect with the automation aspect, thus boosting what robots can do in a completely autonomous manner. (No 3D is needed)",
+            "descr": "The DARB (Disassembly using Autonomous Robot for Batteries) Lab has the mission of studying innovative solutions to control the tasks performed by robots by merging the perceptual aspect with the automation aspect, thus boosting what robots can do in a completely autonomous manner.",
             "type": "https://w3id.org/ontoeng/factory#ManufacturingSystem"
         },
         {
             "id": "Kuka_KR50R2500",
-            "descr": "Kuka KR50 robot with KRC5 control of 45 kg mounted on a linear axis (3D: to be generated from URDF+stl files or converted from 3D files available online)",
+            "descr": "Kuka KR50 robot with KRC5 control of 45 kg mounted on a linear axis",
             "type": "https://w3id.org/ontoeng/factory#Robot",
             "representations": [
                 {
@@ -61,7 +61,7 @@
         },
         {
             "id": "Kuka_controller",
-            "descr": "Controller of Kuka robot (3D: ok)",
+            "descr": "Controller of Kuka robot",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcUnitaryControlElement",
             "representations": [
                 {
@@ -83,7 +83,7 @@
         },
         {
             "id": "Kuka_structure",
-            "descr": "Structural element for Kuka robot (3D to be updated: to be extracted from .stp file)",
+            "descr": "Structural element for Kuka robot",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
@@ -105,7 +105,7 @@
         },
         {
             "id": "Kuka_tool_storage",
-            "descr": "Storage for Kuka tools (3D to be finalized later)",
+            "descr": "Storage for Kuka tools",
             "type": "https://w3id.org/ontoeng/factory#StorageElement",
             "representations": [
                 {
@@ -127,7 +127,7 @@
         },
         {
             "id": "Comau_NJ220",
-            "descr": "Comau NJ220 robot of 220 kg with control C5GOpen (3D: to be generated from URDF+stl files) (the existing GLB file is not properly structured)",
+            "descr": "Comau NJ220 robot of 220 kg with control C5GOpen",
             "type": "https://w3id.org/ontoeng/factory#Robot",
             "representations": [
                 {
@@ -149,7 +149,7 @@
         },
         {
             "id": "Comau_controller",
-            "descr": "Controller of Comau robot (3D: ok, but can be improved)",
+            "descr": "Controller of Comau robot",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcZone",
             "representations": [
                 {
@@ -171,7 +171,7 @@
         },
         {
             "id": "Table_1",
-            "descr": "Table for Comau robot tools (3D: ok, but can be improved)",
+            "descr": "Table for Comau robot tools",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
             "representations": [
                 {
@@ -193,7 +193,7 @@
         },
         {
             "id": "Omron_HD1500",
-            "descr": "Omron HD1500 mobile robot composed of a robot and a mobile platform by Omron (progetto da aggiornare)",
+            "descr": "Omron HD1500 mobile robot composed of a robot and a mobile platform by Omron",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
             "representations": [
                 {
@@ -215,19 +215,19 @@
         },
         {
             "id": "Omron_LD60",
-            "descr": "Mobile robot (3D: to be found online)",
+            "descr": "Mobile robot",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
             "placementRelTo": "lab_building"
         },
         {
             "id": "Techman12",
-            "descr": "Mounted on top of Omron_LD60 (3D: to be found online)",
+            "descr": "Mounted on top of Omron_LD60",
             "type": "https://w3id.org/ontoeng/factory#Robot",
             "placementRelTo": "lab_building"
         },
         {
             "id": "CustomConnection",
-            "descr": "Connection between Omron_LD60 and Techman12 (3D will be provided in the future)",
+            "descr": "Connection between Omron_LD60 and Techman12",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "placementRelTo": "lab_building"
         }

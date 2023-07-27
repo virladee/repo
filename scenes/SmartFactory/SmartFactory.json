@@ -304,22 +304,6 @@
                 0
             ],
             "placementRelTo": "InnoLabBuilding"
-        },
-        {
-            "id": "ET200SP",
-            "descr": "Siemens PLC"
-        },
-        {
-            "id": "S7-1500",
-            "descr": "Siemens PLC"
-        },
-        {
-            "id": "S7-1200",
-            "descr": "Siemens PLC"
-        },
-        {
-            "id": "X20CP1686",
-            "descr": "B&R PLC"
         }
     ]
 }

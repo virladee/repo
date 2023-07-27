@@ -1,1 +1,1436 @@
-{"context": { "UnitOfMeasureScale": 0.01,"Zup": true, "RepoPath": ""},"scene": ["IVAR_building","IvarLabRoom","ABB_base","ABB_IRB1600","ABB_IRB1600.Link_1","Omron_TM5900","Motoman_GP8_Stand","Motoman_GP8","CNC","StorageBlock","FESTO_robotino","ConveyorBelt_","Column","DIMUSA","Nikon_3Dscanner","Double_Board","Small_Board","Wardrobe","Half_Hex_Table.1","Half_Hex_Table.2","Half_Hex_Table.3","Half_Hex_Table.4","Half_Hex_Table.5","Half_Hex_Table.6","Half_Hex_Table.7","Half_Hex_Table.8","Half_Hex_Long_Table.1","Half_Hex_Long_Table.2","Half_Hex_Half_Long_Table.1","Chair.1","Chair.2","Chair.3","Chair.4","Chair.5","Chair.6","Chair.7","Desk_with_Drawers.1","Monitor.1","Keyboard.1","Mouse.1","Computer.1","PC_Chair.1","Desk_with_Drawers.2","Monitor.2","Keyboard.2","Mouse.2","Computer.2","PC_Chair.2","Desk.3","Monitor.3","Keyboard.3","Mouse.3","Computer.3","PC_Chair.3","Desk.4","Monitor.4","Keyboard.4","Mouse.4","Computer.4","PC_Chair.4","Desk.5","Monitor.5","Keyboard.5","Mouse.5","Computer.5","PC_Chair.5"], "assets": [{"id": "IVAR_building", "descr": "Lab building", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding", "representations": [{"file": "u5Main.glb", "unit": 1}], "position": [0,0,0], "rotation": [0,0,0]},{"id": "IvarLab", "descr": "IVAR demo lab", "type": "https://w3id.org/ontoeng/factory#ManufacturingSystem"},{"id": "IvarLabRoom", "descr": "Room of the lab", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSpace", "position": [-346,-1429,65], "placementRelTo": "IVAR_building", "parentObject": "IVAR_building"},{"id": "ABB_base", "descr": "Base for the ABB robot", "representations": [{"file": "ABBbase.glb", "unit": 1}], "position": [1200,790,0], "rotation": [0,0,0.523598775598299], "placementRelTo": "IvarLabRoom"},{"id": "ABB_IRB1600", "descr": "Industrial Robot ABB IRB 1600", "type": "https://w3id.org/ontoeng/factory#Robot", "representations": [{"file": "ABBrobot.glb", "unit": 1}], "position": [-40,-60,13.5], "rotation": [0,0,-1.5707963267949], "placementRelTo": "ABB_base"},{"id": "ABB_IRB1600.Link_1", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly", "representations": [{"file": "ABBrobot.glb#Link_1", "unit": 1}], "rotation": [0,0,-1.5707963267949], "placementRelTo": "ABB_IRB1600", "parentObject": "ABB_IRB1600"},{"id": "Omron_TM5900", "descr": "Collaborative Robot TM5 900 Omron", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement", "representations": [{"file": "OMRON+Stand.glb", "unit": 1}], "position": [30,500,0], "rotation": [0,0,1.5707963267949], "placementRelTo": "IvarLabRoom"},{"id": "Motoman_GP8_Stand", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "MotomanStand.glb", "unit": 1}], "position": [1100,370,0], "rotation": [0,0,0], "placementRelTo": "IvarLabRoom"},{"id": "Motoman_GP8", "descr": "Robot with training cell", "type": "https://w3id.org/ontoeng/factory#Robot", "representations": [{"file": "MotomanRobot.glb", "unit": 1}], "position": [0,-20,90], "rotation": [0,0,0], "placementRelTo": "Motoman_GP8_Stand"},{"id": "Festo_FMS", "descr": "FESTO Flexible manufacturing system", "type": "https://w3id.org/ontoeng/factory#ManufacturingSystem", "placementRelTo": "IvarLabRoom"},{"id": "CNC", "type": "https://w3id.org/ontoeng/factory#MachineTool", "representations": [{"file": "FESTOCNC.glb", "unit": 1}], "position": [350,1150,0], "rotation": [0,0,0], "placementRelTo": "IvarLabRoom"},{"id": "StorageBlock", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly", "representations": [{"file": "FESTOStorageBlock.glb", "unit": 1}], "position": [200,180,0], "rotation": [0,0,0.698131700797732], "placementRelTo": "IvarLabRoom"},{"id": "FESTO_robotino", "type": "https://w3id.org/ontoeng/factory#Robot", "representations": [{"file": "FESTOrobotino.glb", "unit": 1}], "position": [50,1100,0], "rotation": [0,0,0], "placementRelTo": "IvarLabRoom"},{"id": "ConveyorBelt_", "descr": "Custom made by PROVEN", "type": "https://w3id.org/ontoeng/factory#Conveyor", "representations": [{"file": "ConveyorBelt.glb", "unit": 1}], "position": [33,605,0], "rotation": [0,0,1.5707963267949], "placementRelTo": "IvarLabRoom"},{"id": "Column", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcColumn", "representations": [{"file": "Column.glb", "unit": 1}], "position": [837,690,0], "rotation": [0,0,0], "placementRelTo": "IvarLabRoom"},{"id": "DIMUSA", "descr": "Real-time monitoring system for industrial machinery", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly", "placementRelTo": "IvarLabRoom"},{"id": "Nikon_3Dscanner", "descr": "Industrial 3D scanner", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly", "placementRelTo": "IvarLabRoom"},{"id": "Double_Board", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "DoubleBoard.glb", "unit": 1}], "position": [925,290,0], "rotation": [0,0,0], "placementRelTo": "IvarLabRoom"},{"id": "Small_Board", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "SmallBoard.glb", "unit": 1}], "position": [1230,330,0], "rotation": [0,0,0], "placementRelTo": "IvarLabRoom"},{"id": "Wardrobe", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "Wardrobe.glb", "unit": 1}], "position": [1315,593,0], "rotation": [0,0,0], "placementRelTo": "IvarLabRoom"},{"id": "Half_Hex_Table.1", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "HalfHexTable.glb", "unit": 1}], "position": [500,368,0], "rotation": [0,0,0], "placementRelTo": "IvarLabRoom"},{"id": "Half_Hex_Table.2", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "HalfHexTable.glb", "unit": 1}], "position": [649,368,0], "rotation": [0,0,3.14159265358979], "placementRelTo": "IvarLabRoom"},{"id": "Half_Hex_Table.3", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "HalfHexTable.glb", "unit": 1}], "position": [698,472,0], "rotation": [0,0,0], "placementRelTo": "IvarLabRoom"},{"id": "Half_Hex_Table.4", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "HalfHexTable.glb", "unit": 1}], "position": [847.1,472,0], "rotation": [0,0,3.14159265358979], "placementRelTo": "IvarLabRoom"},{"id": "Half_Hex_Table.5", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "HalfHexTable.glb", "unit": 1}], "position": [440,77,0], "rotation": [0,0,-3.14159265358979], "placementRelTo": "IvarLabRoom"},{"id": "Half_Hex_Table.6", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "HalfHexTable.glb", "unit": 1}], "position": [290.895,77,0], "rotation": [0,0,0], "placementRelTo": "IvarLabRoom"},{"id": "Half_Hex_Table.7", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "HalfHexTable.glb", "unit": 1}], "position": [780,77,0], "rotation": [0,0,-3.14159265358979], "placementRelTo": "IvarLabRoom"},{"id": "Half_Hex_Table.8", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "HalfHexTable.glb", "unit": 1}], "position": [631,77,0], "rotation": [0,0,0], "placementRelTo": "IvarLabRoom"},{"id": "Half_Hex_Long_Table.1", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "HalfHexLongTable.glb", "unit": 1}], "position": [401.249,20,0], "rotation": [0,0,-3.14159265358979], "placementRelTo": "IvarLabRoom"},{"id": "Half_Hex_Long_Table.2", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "HalfHexLongTable.glb", "unit": 1}], "position": [60.5,20,0], "rotation": [0,0,-3.14159265358979], "placementRelTo": "IvarLabRoom"},{"id": "Half_Hex_Half_Long_Table.1", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "HalfHexHalfLongTable.glb", "unit": 1}], "position": [741.249,20,0], "rotation": [0,0,0], "placementRelTo": "IvarLabRoom"},{"id": "Chair.1", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "Chair.glb", "unit": 1}], "position": [650,333,0], "rotation": [0,0,-3.14159265358979], "placementRelTo": "IvarLabRoom"},{"id": "Chair.2", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "Chair.glb", "unit": 1}], "position": [707,506,0], "rotation": [0,0,0], "placementRelTo": "IvarLabRoom"},{"id": "Chair.3", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "Chair.glb", "unit": 1}], "position": [847,437,0], "rotation": [0,0,-3.14159265358979], "placementRelTo": "IvarLabRoom"},{"id": "Chair.4", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "Chair.glb", "unit": 1}], "position": [770,414,0], "rotation": [0,0,1.91986217719376], "placementRelTo": "IvarLabRoom"},{"id": "Chair.5", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "Chair.glb", "unit": 1}], "position": [579,453,0], "rotation": [0,0,-1.39626340159546], "placementRelTo": "IvarLabRoom"},{"id": "Chair.6", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "Chair.glb", "unit": 1}], "position": [578,300,0], "rotation": [0,0,1.74532925199433], "placementRelTo": "IvarLabRoom"},{"id": "Chair.7", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "Chair.glb", "unit": 1}], "position": [475,95,0], "rotation": [0,0,-1.39626340159546], "placementRelTo": "IvarLabRoom"},{"id": "Desk_with_Drawers.1", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "PCTableWithDrawers.glb", "unit": 1}], "position": [90,1000,0], "rotation": [0,0,1.5707963267949], "placementRelTo": "IvarLabRoom"},{"id": "Monitor.1", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "PCmonitor.glb", "unit": 1}], "position": [-95,50,83.748], "rotation": [0,0,0.174532925199433], "placementRelTo": "Desk_with_Drawers.1"},{"id": "Keyboard.1", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "PCkeyboard.glb", "unit": 1}], "position": [-95,25,83.748], "rotation": [0,0,0], "placementRelTo": "Desk_with_Drawers.1"},{"id": "Mouse.1", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "PCmouse.glb", "unit": 1}], "position": [-55,16,83.748], "rotation": [0,0,0], "placementRelTo": "Desk_with_Drawers.1"},{"id": "Computer.1", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "PC.glb", "unit": 1}], "position": [44,1000,0], "rotation": [0,0,0], "placementRelTo": "IvarLabRoom"},{"id": "PC_Chair.1", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "PCChair.glb", "unit": 1}], "position": [120,900,0], "rotation": [0,0,-1.5707963267949], "placementRelTo": "IvarLabRoom"},{"id": "Desk_with_Drawers.2", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "PCTableWithDrawers.glb", "unit": 1}], "position": [975,1110,0], "rotation": [0,0,0], "placementRelTo": "IvarLabRoom"},{"id": "Monitor.2", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "PCmonitor.glb", "unit": 1}], "position": [-95,50,83.748], "rotation": [0,0,0.174532925199433], "placementRelTo": "Desk_with_Drawers.2"},{"id": "Keyboard.2", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "PCkeyboard.glb", "unit": 1}], "position": [-95,25,83.748], "rotation": [0,0,0], "placementRelTo": "Desk_with_Drawers.2"},{"id": "Mouse.2", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "PCmouse.glb", "unit": 1}], "position": [-55,16,83.748], "rotation": [0,0,0], "placementRelTo": "Desk_with_Drawers.2"},{"id": "Computer.2", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "PC.glb", "unit": 1}], "position": [975,1160,0], "rotation": [0,0,-1.5707963267949], "placementRelTo": "IvarLabRoom"},{"id": "PC_Chair.2", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "PCChair.glb", "unit": 1}], "position": [880,1086,0], "rotation": [0,0,3.14159265358979], "placementRelTo": "IvarLabRoom"},{"id": "Desk.3", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "PCTable.glb", "unit": 1}], "position": [825,1110,0], "rotation": [0,0,-1.5707963267949], "placementRelTo": "IvarLabRoom"},{"id": "Monitor.3", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "PCmonitor.glb", "unit": 1}], "position": [-45,-109.5,83.748], "rotation": [0,0,1.74532925199433], "placementRelTo": "Desk.3"},{"id": "Keyboard.3", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "PCkeyboard.glb", "unit": 1}], "position": [-25,-101.5,83.748], "rotation": [0,0,1.5707963267949], "placementRelTo": "Desk.3"},{"id": "Mouse.3", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "PCmouse.glb", "unit": 1}], "position": [-18,-63.5,83.748], "rotation": [0,0,1.5707963267949], "placementRelTo": "Desk.3"},{"id": "Computer.3", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "PC.glb", "unit": 1}], "position": [825,1160,0], "rotation": [0,0,-1.5707963267949], "placementRelTo": "IvarLabRoom"},{"id": "PC_Chair.3", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "PCChair.glb", "unit": 1}], "position": [769,1086,0], "rotation": [0,0,3.14159265358979], "placementRelTo": "IvarLabRoom"},{"id": "Desk.4", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "PCTable.glb", "unit": 1}], "position": [675,1189.5,0], "rotation": [0,0,0], "placementRelTo": "IvarLabRoom"},{"id": "Monitor.4", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "PCmonitor.glb", "unit": 1}], "position": [-45,-109.5,83.748], "rotation": [0,0,1.74532925199433], "placementRelTo": "Desk.4"},{"id": "Keyboard.4", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "PCkeyboard.glb", "unit": 1}], "position": [-25,-101.5,83.748], "rotation": [0,0,1.5707963267949], "placementRelTo": "Desk.4"},{"id": "Mouse.4", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "PCmouse.glb", "unit": 1}], "position": [-18,-63.5,83.748], "rotation": [0,0,1.5707963267949], "placementRelTo": "Desk.4"},{"id": "Computer.4", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "PC.glb", "unit": 1}], "position": [639,1160,0], "rotation": [0,0,0], "placementRelTo": "IvarLabRoom"},{"id": "PC_Chair.4", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "PCChair.glb", "unit": 1}], "position": [694,1082,0], "rotation": [0,0,-2.0943951023932], "placementRelTo": "IvarLabRoom"},{"id": "Desk.5", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "PCTable.glb", "unit": 1}], "position": [675,1054,0], "rotation": [0,0,0], "placementRelTo": "IvarLabRoom"},{"id": "Monitor.5", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "PCmonitor.glb", "unit": 1}], "position": [-45,-101,83.748], "rotation": [0,0,1.5707963267949], "placementRelTo": "Desk.5"},{"id": "Keyboard.5", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "PCkeyboard.glb", "unit": 1}], "position": [-25,-104,83.748], "rotation": [0,0,1.5707963267949], "placementRelTo": "Desk.5"},{"id": "Mouse.5", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "PCmouse.glb", "unit": 1}], "position": [-18,-67,83.748], "rotation": [0,0,1.5707963267949], "placementRelTo": "Desk.5"},{"id": "Computer.5", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "PC.glb", "unit": 1}], "position": [639,1020,0], "rotation": [0,0,0], "placementRelTo": "IvarLabRoom"},{"id": "PC_Chair.5", "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture", "representations": [{"file": "PCChair.glb", "unit": 1}], "position": [690,963,0], "rotation": [0,0,-1.5707963267949], "placementRelTo": "IvarLabRoom"}]}
+{
+    "context": {
+        "UnitOfMeasureScale": 0.01,
+        "Zup": true,
+        "RepoPath": ""
+    },
+    "scene": [
+        "IVAR_building",
+        "IvarLabRoom",
+        "ABB_base",
+        "ABB_IRB1600",
+        "ABB_IRB1600.Link_1",
+        "Omron_TM5900",
+        "Motoman_GP8_Stand",
+        "Motoman_GP8",
+        "CNC",
+        "StorageBlock",
+        "FESTO_robotino",
+        "ConveyorBelt_",
+        "Column",
+        "DIMUSA",
+        "Nikon_3Dscanner",
+        "Double_Board",
+        "Small_Board",
+        "Wardrobe",
+        "Half_Hex_Table.1",
+        "Half_Hex_Table.2",
+        "Half_Hex_Table.3",
+        "Half_Hex_Table.4",
+        "Half_Hex_Table.5",
+        "Half_Hex_Table.6",
+        "Half_Hex_Table.7",
+        "Half_Hex_Table.8",
+        "Half_Hex_Long_Table.1",
+        "Half_Hex_Long_Table.2",
+        "Half_Hex_Half_Long_Table.1",
+        "Chair.1",
+        "Chair.2",
+        "Chair.3",
+        "Chair.4",
+        "Chair.5",
+        "Chair.6",
+        "Chair.7",
+        "Desk_with_Drawers.1",
+        "Monitor.1",
+        "Keyboard.1",
+        "Mouse.1",
+        "Computer.1",
+        "PC_Chair.1",
+        "Desk_with_Drawers.2",
+        "Monitor.2",
+        "Keyboard.2",
+        "Mouse.2",
+        "Computer.2",
+        "PC_Chair.2",
+        "Desk.3",
+        "Monitor.3",
+        "Keyboard.3",
+        "Mouse.3",
+        "Computer.3",
+        "PC_Chair.3",
+        "Desk.4",
+        "Monitor.4",
+        "Keyboard.4",
+        "Mouse.4",
+        "Computer.4",
+        "PC_Chair.4",
+        "Desk.5",
+        "Monitor.5",
+        "Keyboard.5",
+        "Mouse.5",
+        "Computer.5",
+        "PC_Chair.5"
+    ],
+    "assets": [
+        {
+            "id": "IVAR_building",
+            "descr": "Lab building",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding",
+            "representations": [
+                {
+                    "file": "u5Main.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": "IvarLab",
+            "descr": "IVAR demo lab",
+            "type": "https://w3id.org/ontoeng/factory#ManufacturingSystem"
+        },
+        {
+            "id": "IvarLabRoom",
+            "descr": "Room of the lab",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSpace",
+            "position": [
+                -346,
+                -1429,
+                65
+            ],
+            "placementRelTo": "IVAR_building",
+            "parentObject": "IVAR_building"
+        },
+        {
+            "id": "ABB_base",
+            "descr": "Base for the ABB robot",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "representations": [
+                {
+                    "file": "ABBbase.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                1200,
+                790,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0.523598775598299
+            ],
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "ABB_IRB1600",
+            "descr": "Industrial Robot ABB IRB 1600",
+            "type": "https://w3id.org/ontoeng/factory#Robot",
+            "representations": [
+                {
+                    "file": "ABBrobot.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                -40,
+                -60,
+                13.5
+            ],
+            "rotation": [
+                0,
+                0,
+                -1.5707963267949
+            ],
+            "placementRelTo": "ABB_base"
+        },
+        {
+            "id": "ABB_IRB1600.Link_1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "representations": [
+                {
+                    "file": "ABBrobot.glb#Link_1",
+                    "unit": 1
+                }
+            ],
+            "rotation": [
+                0,
+                0,
+                -1.5707963267949
+            ],
+            "placementRelTo": "ABB_IRB1600",
+            "parentObject": "ABB_IRB1600"
+        },
+        {
+            "id": "Omron_TM5900",
+            "descr": "Collaborative Robot TM5 900 Omron",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
+            "representations": [
+                {
+                    "file": "OMRON+Stand.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                30,
+                500,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                1.5707963267949
+            ],
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "Motoman_GP8_Stand",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "MotomanStand.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                1100,
+                370,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "Motoman_GP8",
+            "descr": "Robot with training cell",
+            "type": "https://w3id.org/ontoeng/factory#Robot",
+            "representations": [
+                {
+                    "file": "MotomanRobot.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                0,
+                -20,
+                90
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "Motoman_GP8_Stand"
+        },
+        {
+            "id": "Festo_FMS",
+            "descr": "FESTO Flexible manufacturing system",
+            "type": "https://w3id.org/ontoeng/factory#ManufacturingSystem",
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "CNC",
+            "type": "https://w3id.org/ontoeng/factory#MachineTool",
+            "representations": [
+                {
+                    "file": "FESTOCNC.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                350,
+                1150,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "StorageBlock",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "representations": [
+                {
+                    "file": "FESTOStorageBlock.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                200,
+                180,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0.698131700797732
+            ],
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "FESTO_robotino",
+            "type": "https://w3id.org/ontoeng/factory#Robot",
+            "representations": [
+                {
+                    "file": "FESTOrobotino.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                50,
+                1100,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "ConveyorBelt_",
+            "descr": "Custom made by PROVEN",
+            "type": "https://w3id.org/ontoeng/factory#Conveyor",
+            "representations": [
+                {
+                    "file": "ConveyorBelt.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                33,
+                605,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                1.5707963267949
+            ],
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "Column",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcColumn",
+            "representations": [
+                {
+                    "file": "Column.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                837,
+                690,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "DIMUSA",
+            "descr": "Real-time monitoring system for industrial machinery",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "Nikon_3Dscanner",
+            "descr": "Industrial 3D scanner",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "Double_Board",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "DoubleBoard.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                925,
+                290,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "Small_Board",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "SmallBoard.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                1230,
+                330,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "Wardrobe",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "Wardrobe.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                1315,
+                593,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "Half_Hex_Table.1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "HalfHexTable.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                500,
+                368,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "Half_Hex_Table.2",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "HalfHexTable.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                649,
+                368,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                3.14159265358979
+            ],
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "Half_Hex_Table.3",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "HalfHexTable.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                698,
+                472,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "Half_Hex_Table.4",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "HalfHexTable.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                847.1,
+                472,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                3.14159265358979
+            ],
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "Half_Hex_Table.5",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "HalfHexTable.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                440,
+                77,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                -3.14159265358979
+            ],
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "Half_Hex_Table.6",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "HalfHexTable.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                290.895,
+                77,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "Half_Hex_Table.7",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "HalfHexTable.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                780,
+                77,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                -3.14159265358979
+            ],
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "Half_Hex_Table.8",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "HalfHexTable.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                631,
+                77,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "Half_Hex_Long_Table.1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "HalfHexLongTable.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                401.249,
+                20,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                -3.14159265358979
+            ],
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "Half_Hex_Long_Table.2",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "HalfHexLongTable.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                60.5,
+                20,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                -3.14159265358979
+            ],
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "Half_Hex_Half_Long_Table.1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "HalfHexHalfLongTable.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                741.249,
+                20,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "Chair.1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "Chair.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                650,
+                333,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                -3.14159265358979
+            ],
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "Chair.2",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "Chair.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                707,
+                506,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "Chair.3",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "Chair.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                847,
+                437,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                -3.14159265358979
+            ],
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "Chair.4",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "Chair.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                770,
+                414,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                1.91986217719376
+            ],
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "Chair.5",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "Chair.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                579,
+                453,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                -1.39626340159546
+            ],
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "Chair.6",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "Chair.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                578,
+                300,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                1.74532925199433
+            ],
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "Chair.7",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "Chair.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                475,
+                95,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                -1.39626340159546
+            ],
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "Desk_with_Drawers.1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "PCTableWithDrawers.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                90,
+                1000,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                1.5707963267949
+            ],
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "Monitor.1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "PCmonitor.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                -95,
+                50,
+                83.748
+            ],
+            "rotation": [
+                0,
+                0,
+                0.174532925199433
+            ],
+            "placementRelTo": "Desk_with_Drawers.1"
+        },
+        {
+            "id": "Keyboard.1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "PCkeyboard.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                -95,
+                25,
+                83.748
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "Desk_with_Drawers.1"
+        },
+        {
+            "id": "Mouse.1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "PCmouse.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                -55,
+                16,
+                83.748
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "Desk_with_Drawers.1"
+        },
+        {
+            "id": "Computer.1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "PC.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                44,
+                1000,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "PC_Chair.1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "PCChair.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                120,
+                900,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                -1.5707963267949
+            ],
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "Desk_with_Drawers.2",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "PCTableWithDrawers.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                975,
+                1110,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "Monitor.2",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "PCmonitor.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                -95,
+                50,
+                83.748
+            ],
+            "rotation": [
+                0,
+                0,
+                0.174532925199433
+            ],
+            "placementRelTo": "Desk_with_Drawers.2"
+        },
+        {
+            "id": "Keyboard.2",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "PCkeyboard.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                -95,
+                25,
+                83.748
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "Desk_with_Drawers.2"
+        },
+        {
+            "id": "Mouse.2",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "PCmouse.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                -55,
+                16,
+                83.748
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "Desk_with_Drawers.2"
+        },
+        {
+            "id": "Computer.2",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "PC.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                975,
+                1160,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                -1.5707963267949
+            ],
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "PC_Chair.2",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "PCChair.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                880,
+                1086,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                3.14159265358979
+            ],
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "Desk.3",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "PCTable.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                825,
+                1110,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                -1.5707963267949
+            ],
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "Monitor.3",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "PCmonitor.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                -45,
+                -109.5,
+                83.748
+            ],
+            "rotation": [
+                0,
+                0,
+                1.74532925199433
+            ],
+            "placementRelTo": "Desk.3"
+        },
+        {
+            "id": "Keyboard.3",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "PCkeyboard.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                -25,
+                -101.5,
+                83.748
+            ],
+            "rotation": [
+                0,
+                0,
+                1.5707963267949
+            ],
+            "placementRelTo": "Desk.3"
+        },
+        {
+            "id": "Mouse.3",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "PCmouse.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                -18,
+                -63.5,
+                83.748
+            ],
+            "rotation": [
+                0,
+                0,
+                1.5707963267949
+            ],
+            "placementRelTo": "Desk.3"
+        },
+        {
+            "id": "Computer.3",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "PC.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                825,
+                1160,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                -1.5707963267949
+            ],
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "PC_Chair.3",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "PCChair.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                769,
+                1086,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                3.14159265358979
+            ],
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "Desk.4",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "PCTable.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                675,
+                1189.5,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "Monitor.4",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "PCmonitor.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                -45,
+                -109.5,
+                83.748
+            ],
+            "rotation": [
+                0,
+                0,
+                1.74532925199433
+            ],
+            "placementRelTo": "Desk.4"
+        },
+        {
+            "id": "Keyboard.4",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "PCkeyboard.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                -25,
+                -101.5,
+                83.748
+            ],
+            "rotation": [
+                0,
+                0,
+                1.5707963267949
+            ],
+            "placementRelTo": "Desk.4"
+        },
+        {
+            "id": "Mouse.4",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "PCmouse.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                -18,
+                -63.5,
+                83.748
+            ],
+            "rotation": [
+                0,
+                0,
+                1.5707963267949
+            ],
+            "placementRelTo": "Desk.4"
+        },
+        {
+            "id": "Computer.4",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "PC.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                639,
+                1160,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "PC_Chair.4",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "PCChair.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                694,
+                1082,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                -2.0943951023932
+            ],
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "Desk.5",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "PCTable.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                675,
+                1054,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "Monitor.5",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "PCmonitor.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                -45,
+                -101,
+                83.748
+            ],
+            "rotation": [
+                0,
+                0,
+                1.5707963267949
+            ],
+            "placementRelTo": "Desk.5"
+        },
+        {
+            "id": "Keyboard.5",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "PCkeyboard.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                -25,
+                -104,
+                83.748
+            ],
+            "rotation": [
+                0,
+                0,
+                1.5707963267949
+            ],
+            "placementRelTo": "Desk.5"
+        },
+        {
+            "id": "Mouse.5",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "PCmouse.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                -18,
+                -67,
+                83.748
+            ],
+            "rotation": [
+                0,
+                0,
+                1.5707963267949
+            ],
+            "placementRelTo": "Desk.5"
+        },
+        {
+            "id": "Computer.5",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "PC.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                639,
+                1020,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "IvarLabRoom"
+        },
+        {
+            "id": "PC_Chair.5",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "PCChair.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                690,
+                963,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                -1.5707963267949
+            ],
+            "placementRelTo": "IvarLabRoom"
+        }
+    ]
+}
