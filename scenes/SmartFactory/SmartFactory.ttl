@@ -1,0 +1,1355 @@
+<https://w3id.org/ontoeng/VL/SmartFactory#Table_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
+                "2600 -13000 0" ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
+                "1 0 0; 0 1 0; 0 0 1" .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_workComp>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_finished> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_startOp>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStartOperation> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_prodrepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_reprlist> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#UR5e_trWorkIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/VL/SmartFactory#UR5e_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/VL/SmartFactory#UR5e_idleComp> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#IGUS_descr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Robot controller for UR5e" .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_1_startOp>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStartOperation> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_finished>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Final> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_trInitCompIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_initSt> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_idleComp> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_idleComp>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#UR5e_idleComp>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#UR5e_trInitCompIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/VL/SmartFactory#UR5e_initSt> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/VL/SmartFactory#UR5e_idleComp> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#IGUS_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#IGUS_relplace> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Cabinet_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C>
+        a       <https://w3id.org/ontoeng/factory#MachineTool> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#description_IfcRoot>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_descr> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_prodrepr> ;
+        <https://w3id.org/ontoeng/osph#hasStateMachine>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_stM> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#BeltConveyor_1_reprlist>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/list#hasContents>
+                <https://w3id.org/ontoeng/VL/SmartFactory#BeltConveyor_1_shaperepr> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Table_extrepr>
+        a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Table_extref> ;
+        <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Table_reprLU> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_reprLU>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Igloo>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Igloo_objplace> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_extrepr>
+        a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_extref> ;
+        <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_reprLU> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Table_reprlist>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/list#hasContents>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Table_shaperepr> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_1_trWorkIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_1_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_1_idleComp> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_shaperepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_extrepr> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_finished>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Final> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Chair_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
+                "2600 -12600 0" ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
+                "-3.4914813388431334e-15 1 0; -1 -3.4914813388431334e-15 0; 0 0 1" .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_extref>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "MatrixProductionWorkCell_C.glb" .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#UnimatLathe>
+        a       <https://w3id.org/ontoeng/factory#MachineTool> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#description_IfcRoot>
+                <https://w3id.org/ontoeng/VL/SmartFactory#UnimatLathe_descr> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/SmartFactory#UnimatLathe_objplace> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding> ;
+        <https://w3id.org/ontoeng/osph#hasStateMachine>
+                <https://w3id.org/ontoeng/VL/SmartFactory#UnimatLathe_stM> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#BeltConveyor_2_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#BeltConveyor_2_relplace> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#UnimatLathe_trWorkIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/VL/SmartFactory#UnimatLathe_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/VL/SmartFactory#UnimatLathe_idleComp> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#GravityConveyor_1>
+        a       <https://w3id.org/ontoeng/factory#Conveyor> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#description_IfcRoot>
+                <https://w3id.org/ontoeng/VL/SmartFactory#GravityConveyor_1_descr> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/SmartFactory#GravityConveyor_1_objplace> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#KUKA_KR3_R540_startOp>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStartOperation> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#KUKA_KR3_R540_stM>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#contains>
+                <https://w3id.org/ontoeng/VL/SmartFactory#KUKA_KR3_R540_trIdleWork> , <https://w3id.org/ontoeng/VL/SmartFactory#KUKA_KR3_R540_trWorkIdle> , <https://w3id.org/ontoeng/VL/SmartFactory#KUKA_KR3_R540_trInitCompIdle> , <https://w3id.org/ontoeng/VL/SmartFactory#KUKA_KR3_R540_workComp> , <https://w3id.org/ontoeng/VL/SmartFactory#KUKA_KR3_R540_idleComp> , <https://w3id.org/ontoeng/VL/SmartFactory#KUKA_KR3_R540_startOp> , <https://w3id.org/ontoeng/VL/SmartFactory#KUKA_KR3_R540_initSt> , <https://w3id.org/ontoeng/VL/SmartFactory#KUKA_KR3_R540_guardTrIdleWork> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#UR5e_initSt>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#ScrewDriver_descr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Kolver Screw Driver" .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Shelf_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Shelf_relplace> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
+                "600 -4500 0" ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
+                "-3.4914813388431334e-15 -1 0; 1 -3.4914813388431334e-15 0; 0 0 1" .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_2_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_2_relplace> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#UnimatLathe_descr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Small educational CNC lathe on custom transport carrier" .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Chair_extrepr>
+        a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Chair_extref> ;
+        <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Chair_reprLU> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#WorkTable>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/SmartFactory#WorkTable_objplace> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#KUKA_KR3_R540_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_workComp>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_finished> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#UnimatLathe_workComp>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#UnimatLathe_finished> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Chair_reprlist>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/list#hasContents>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Chair_shaperepr> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#KUKA_KR3_R540_workComp>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#KUKA_KR3_R540_finished> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#GravityConveyor_2_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#GravityConveyor_2_relplace> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#LinakActuator_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#LinakActuator_relplace> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_initSt>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_descr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Contains KUKA robot, UR5e, IGUS 7th axis for UR5e, Siegmund Welding table, Linak LA36 actuator, Custom control cabinet, Kolver Screw Driver" .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#UnimatMill_workComp>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#UnimatMill_finished> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#UnimatMill_trInitCompIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/VL/SmartFactory#UnimatMill_initSt> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/VL/SmartFactory#UnimatMill_idleComp> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_reprLU>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#UnimatMill_trIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/VL/SmartFactory#UnimatMill_idleComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/VL/SmartFactory#UnimatMill_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/VL/SmartFactory#UnimatMill_guardTrIdleWork> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#UR5e>
+        a       <https://w3id.org/ontoeng/factory#Robot> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#description_IfcRoot>
+                <https://w3id.org/ontoeng/VL/SmartFactory#UR5e_descr> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/SmartFactory#UR5e_objplace> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding> ;
+        <https://w3id.org/ontoeng/osph#hasStateMachine>
+                <https://w3id.org/ontoeng/VL/SmartFactory#UR5e_stM> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#UnimatMill_guardTrIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/VL/SmartFactory#UnimatMill_startOp> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A>
+        a       <https://w3id.org/ontoeng/factory#MachineTool> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#description_IfcRoot>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_descr> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_prodrepr> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding> ;
+        <https://w3id.org/ontoeng/osph#hasStateMachine>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_stM> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_stM>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#contains>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_initSt> , <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_trIdleWork> , <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_workComp> , <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_trInitCompIdle> , <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_idleComp> , <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_guardTrIdleWork> , <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_trWorkIdle> , <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_startOp> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#BeltConveyor_2_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
+                "0 0 0" ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
+                "1 0 0; 0 1 0; 0 0 1" .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_trIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_idleComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_guardTrIdleWork> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_2_initSt>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_extref>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "MatrixProductionWorkCell_B.glb" .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#UnimatMill_startOp>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStartOperation> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_trInitCompIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_initSt> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_idleComp> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#GravityConveyor_3_descr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "gravity conveyor for teaching purposes (P-TECH)" .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#KUKA_KR3_R540_trIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/VL/SmartFactory#KUKA_KR3_R540_idleComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/VL/SmartFactory#KUKA_KR3_R540_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/VL/SmartFactory#KUKA_KR3_R540_guardTrIdleWork> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#UR5e_workComp>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#UR5e_finished> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_guardTrIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_startOp> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_prodrepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_reprlist> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#UnimatLathe_guardTrIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/VL/SmartFactory#UnimatLathe_startOp> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#ControlCabinet_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#ControlCabinet_relplace> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#ControlCabinet_descr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Custom control cabinet" .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_relplace> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#ControlCabinet>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcUnitaryControlElement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#description_IfcRoot>
+                <https://w3id.org/ontoeng/VL/SmartFactory#ControlCabinet_descr> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/SmartFactory#ControlCabinet_objplace> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_finished>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Final> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#UnimatLathe_finished>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Final> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_idleComp>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#KUKA_KR3_R540_finished>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Final> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Shelf_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#KUKA_KR3_R540_idleComp>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_extrepr>
+        a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_extref> ;
+        <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_reprLU> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#LinakActuator>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcActuator> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#description_IfcRoot>
+                <https://w3id.org/ontoeng/VL/SmartFactory#LinakActuator_descr> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/SmartFactory#LinakActuator_objplace> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#BeltConveyor_1_shaperepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
+                <https://w3id.org/ontoeng/VL/SmartFactory#BeltConveyor_1_extrepr> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#GravityConveyor_1_descr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "gravity conveyor for teaching purposes (P-TECH)" .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#UnimatMill_finished>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Final> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#WeldingTable>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#description_IfcRoot>
+                <https://w3id.org/ontoeng/VL/SmartFactory#WeldingTable_descr> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/SmartFactory#WeldingTable_objplace> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#GravityConveyor_2_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Igloo_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_2_guardTrIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_2_startOp> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_2_startOp>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStartOperation> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#UnimatLathe_startOp>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStartOperation> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#BeltConveyor_1_prodrepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
+                <https://w3id.org/ontoeng/VL/SmartFactory#BeltConveyor_1_reprlist> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_stM>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#contains>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_startOp> , <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_workComp> , <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_trIdleWork> , <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_initSt> , <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_idleComp> , <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_trInitCompIdle> , <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_guardTrIdleWork> , <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_trWorkIdle> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Cabinet_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Cabinet_relplace> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_initSt>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#WorkTable_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#ScrewDriver_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#LinakActuator_descr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Linak LA36 actuator" .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_trIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_idleComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_guardTrIdleWork> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#UR5e_finished>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Final> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Table_prodrepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Table_reprlist> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Chair_shaperepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Chair_extrepr> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#BeltConveyor_1_extref>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "ConveyorSystem.glb" .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_1_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_1>
+        a       <https://w3id.org/ontoeng/factory#MachineTool> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#description_IfcRoot>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_1_descr> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_1_objplace> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding> ;
+        <https://w3id.org/ontoeng/osph#hasStateMachine>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_1_stM> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_guardTrIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_startOp> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_2_trInitCompIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_2_initSt> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_2_idleComp> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_1_workComp>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_1_finished> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#UnimatMill_stM>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#contains>
+                <https://w3id.org/ontoeng/VL/SmartFactory#UnimatMill_trInitCompIdle> , <https://w3id.org/ontoeng/VL/SmartFactory#UnimatMill_startOp> , <https://w3id.org/ontoeng/VL/SmartFactory#UnimatMill_idleComp> , <https://w3id.org/ontoeng/VL/SmartFactory#UnimatMill_trWorkIdle> , <https://w3id.org/ontoeng/VL/SmartFactory#UnimatMill_initSt> , <https://w3id.org/ontoeng/VL/SmartFactory#UnimatMill_workComp> , <https://w3id.org/ontoeng/VL/SmartFactory#UnimatMill_trIdleWork> , <https://w3id.org/ontoeng/VL/SmartFactory#UnimatMill_guardTrIdleWork> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#BeltConveyor_2_descr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "belt conveyor for teaching purposes (P-TECH)" .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_1_initSt>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#GravityConveyor_1_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#ControlCabinet_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_extref>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "MatrixProductionWorkCell_A.glb" .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
+                "600 -4500 0" ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
+                "-3.4914813388431334e-15 -1 0; 1 -3.4914813388431334e-15 0; 0 0 1" .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_trWorkIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_idleComp> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#ToolStorage>
+        a       <https://w3id.org/ontoeng/factory#StorageElement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/SmartFactory#ToolStorage_objplace> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_descr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Contains KUKA robot, UR5e, IGUS 7th axis for UR5e, Siegmund Welding table, Linak LA36 actuator, Custom control cabinet, Kolver Screw Driver" .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#BeltConveyor_1>
+        a       <https://w3id.org/ontoeng/factory#Conveyor> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#description_IfcRoot>
+                <https://w3id.org/ontoeng/VL/SmartFactory#BeltConveyor_1_descr> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/SmartFactory#BeltConveyor_1_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
+                <https://w3id.org/ontoeng/VL/SmartFactory#BeltConveyor_1_prodrepr> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Cabinet>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Cabinet_objplace> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_reprlist>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/list#hasContents>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_shaperepr> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#GravityConveyor_2>
+        a       <https://w3id.org/ontoeng/factory#Conveyor> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#description_IfcRoot>
+                <https://w3id.org/ontoeng/VL/SmartFactory#GravityConveyor_2_descr> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/SmartFactory#GravityConveyor_2_objplace> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_descr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Lab building" .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Table>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Table_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Table_prodrepr> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#BeltConveyor_1_extrepr>
+        a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
+                <https://w3id.org/ontoeng/VL/SmartFactory#BeltConveyor_1_extref> ;
+        <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
+                <https://w3id.org/ontoeng/VL/SmartFactory#BeltConveyor_1_reprLU> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#LabSystem_descr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Smart Factory Lab (SDU)" .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_1_stM>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#contains>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_1_guardTrIdleWork> , <https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_1_trInitCompIdle> , <https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_1_trWorkIdle> , <https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_1_trIdleWork> , <https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_1_startOp> , <https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_1_initSt> , <https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_1_workComp> , <https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_1_idleComp> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#UnimatLathe_stM>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#contains>
+                <https://w3id.org/ontoeng/VL/SmartFactory#UnimatLathe_trWorkIdle> , <https://w3id.org/ontoeng/VL/SmartFactory#UnimatLathe_guardTrIdleWork> , <https://w3id.org/ontoeng/VL/SmartFactory#UnimatLathe_workComp> , <https://w3id.org/ontoeng/VL/SmartFactory#UnimatLathe_trInitCompIdle> , <https://w3id.org/ontoeng/VL/SmartFactory#UnimatLathe_startOp> , <https://w3id.org/ontoeng/VL/SmartFactory#UnimatLathe_idleComp> , <https://w3id.org/ontoeng/VL/SmartFactory#UnimatLathe_trIdleWork> , <https://w3id.org/ontoeng/VL/SmartFactory#UnimatLathe_initSt> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_1_guardTrIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_1_startOp> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_startOp>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStartOperation> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_shaperepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_extrepr> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#GravityConveyor_2_descr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "gravity conveyor for teaching purposes (P-TECH)" .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Table_shaperepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Table_extrepr> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Chair_reprLU>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_extrepr>
+        a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_extref> ;
+        <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_reprLU> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_trIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_idleComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_guardTrIdleWork> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#GravityConveyor_3_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#GravityConveyor_3_relplace> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_stM>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#contains>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_idleComp> , <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_workComp> , <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_startOp> , <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_guardTrIdleWork> , <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_initSt> , <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_trIdleWork> , <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_trInitCompIdle> , <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_trWorkIdle> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#ToolStorage_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#ToolStorage_relplace> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Chair_prodrepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Chair_reprlist> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_relplace> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#LabSystem>
+        a       <https://w3id.org/ontoeng/factory#ManufacturingSystem> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#description_IfcRoot>
+                <https://w3id.org/ontoeng/VL/SmartFactory#LabSystem_descr> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#UnimatLathe_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#UnimatLathe_relplace> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_1_finished>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Final> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#KUKA_KR3_R540_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#KUKA_KR3_R540_relplace> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_1_idleComp>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_reprlist>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/list#hasContents>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_shaperepr> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Table_reprLU>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#WeldingTable_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#WeldingTable_relplace> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#UR5e_trIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/VL/SmartFactory#UR5e_idleComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/VL/SmartFactory#UR5e_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/VL/SmartFactory#UR5e_guardTrIdleWork> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_guardTrIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_startOp> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_initSt>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#UnimatMill_trWorkIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/VL/SmartFactory#UnimatMill_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/VL/SmartFactory#UnimatMill_idleComp> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_2_descr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Unimat + FlashForge Inventor" .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#UnimatMill_initSt>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#UnimatMill_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#UnimatMill_relplace> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#IGUS_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#WeldingTable_descr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Siegmund Welding table" .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_idleComp>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B>
+        a       <https://w3id.org/ontoeng/factory#MachineTool> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#description_IfcRoot>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_descr> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_prodrepr> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding> ;
+        <https://w3id.org/ontoeng/osph#hasStateMachine>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_stM> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_trWorkIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_idleComp> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#KUKA_KR3_R540_trWorkIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/VL/SmartFactory#KUKA_KR3_R540_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/VL/SmartFactory#KUKA_KR3_R540_idleComp> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#KUKA_KR3_R540_descr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "KUKA Ready2Educate Advanced Vision" .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#UnimatLathe_trInitCompIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/VL/SmartFactory#UnimatLathe_initSt> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/VL/SmartFactory#UnimatLathe_idleComp> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_prodrepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_reprlist> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_2_stM>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#contains>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_2_trWorkIdle> , <https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_2_startOp> , <https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_2_trInitCompIdle> , <https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_2_workComp> , <https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_2_idleComp> , <https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_2_guardTrIdleWork> , <https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_2_trIdleWork> , <https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_2_initSt> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_relplace> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_trInitCompIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_initSt> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_idleComp> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_startOp>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStartOperation> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_relplace> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#KUKA_KR3_R540>
+        a       <https://w3id.org/ontoeng/factory#Robot> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#description_IfcRoot>
+                <https://w3id.org/ontoeng/VL/SmartFactory#KUKA_KR3_R540_descr> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/SmartFactory#KUKA_KR3_R540_objplace> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding> ;
+        <https://w3id.org/ontoeng/osph#hasStateMachine>
+                <https://w3id.org/ontoeng/VL/SmartFactory#KUKA_KR3_R540_stM> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#UR5e_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#UR5e_relplace> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#UR5e_startOp>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStartOperation> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_1_trIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_1_idleComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_1_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_1_guardTrIdleWork> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#IGUS>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcUnitaryControlElement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#description_IfcRoot>
+                <https://w3id.org/ontoeng/VL/SmartFactory#IGUS_descr> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/SmartFactory#IGUS_objplace> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_reprLU>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#UnimatLathe_initSt>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#GravityConveyor_3_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#ToolStorage_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#BeltConveyor_1_descr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "belt conveyor for teaching purposes (P-TECH)" .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#UR5e_descr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Collaborative Robot" .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_shaperepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_extrepr> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#UnimatLathe_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#description_IfcRoot>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_descr> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_prodrepr> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#UnimatLathe_trIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/VL/SmartFactory#UnimatLathe_idleComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/VL/SmartFactory#UnimatLathe_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/VL/SmartFactory#UnimatLathe_guardTrIdleWork> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_prodrepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_reprlist> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_descr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Contains KUKA robot, UR5e, IGUS 7th axis for UR5e, Siegmund Welding table, Linak LA36 actuator, Custom control cabinet, Kolver Screw Driver" .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#WeldingTable_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#UR5e_stM>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#contains>
+                <https://w3id.org/ontoeng/VL/SmartFactory#UR5e_idleComp> , <https://w3id.org/ontoeng/VL/SmartFactory#UR5e_workComp> , <https://w3id.org/ontoeng/VL/SmartFactory#UR5e_trWorkIdle> , <https://w3id.org/ontoeng/VL/SmartFactory#UR5e_startOp> , <https://w3id.org/ontoeng/VL/SmartFactory#UR5e_guardTrIdleWork> , <https://w3id.org/ontoeng/VL/SmartFactory#UR5e_initSt> , <https://w3id.org/ontoeng/VL/SmartFactory#UR5e_trInitCompIdle> , <https://w3id.org/ontoeng/VL/SmartFactory#UR5e_trIdleWork> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#BeltConveyor_1_reprLU>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#BeltConveyor_1_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#BeltConveyor_1_relplace> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_2_trWorkIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_2_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_2_idleComp> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_1_trInitCompIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_1_initSt> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_1_idleComp> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Igloo_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Igloo_relplace> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#UnimatMill_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_trWorkIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_A_idleComp> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_2_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Chair_extref>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Chair.glb" .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Table_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Table_relplace> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#UR5e_guardTrIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/VL/SmartFactory#UR5e_startOp> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Chair>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Chair_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Chair_prodrepr> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#WorkTable_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#WorkTable_relplace> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#ScrewDriver_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#ScrewDriver_relplace> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_shaperepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_extrepr> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_2_workComp>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_2_finished> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_2>
+        a       <https://w3id.org/ontoeng/factory#MachineTool> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#description_IfcRoot>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_2_descr> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_2_objplace> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding> ;
+        <https://w3id.org/ontoeng/osph#hasStateMachine>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_2_stM> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Table_extref>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Desk.glb" .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#LinakActuator_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#KUKA_KR3_R540_trInitCompIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/VL/SmartFactory#KUKA_KR3_R540_initSt> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/VL/SmartFactory#KUKA_KR3_R540_idleComp> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Shelf>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Shelf_objplace> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
+                "600 -4500 0" ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
+                "-3.4914813388431334e-15 -1 0; 1 -3.4914813388431334e-15 0; 0 0 1" .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_1_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_1_relplace> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#UR5e_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#UnimatMill>
+        a       <https://w3id.org/ontoeng/factory#MachineTool> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#description_IfcRoot>
+                <https://w3id.org/ontoeng/VL/SmartFactory#UnimatMill_descr> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/SmartFactory#UnimatMill_objplace> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding> ;
+        <https://w3id.org/ontoeng/osph#hasStateMachine>
+                <https://w3id.org/ontoeng/VL/SmartFactory#UnimatMill_stM> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_reprlist>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/list#hasContents>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_shaperepr> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#UnimatMill_descr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Small educational CNC mill on custom transport carrier" .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_workComp>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_finished> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_2_trIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_2_idleComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_2_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_2_guardTrIdleWork> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_C_reprLU>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#GravityConveyor_1_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#GravityConveyor_1_relplace> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#BeltConveyor_2>
+        a       <https://w3id.org/ontoeng/factory#Conveyor> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#description_IfcRoot>
+                <https://w3id.org/ontoeng/VL/SmartFactory#BeltConveyor_2_descr> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/SmartFactory#BeltConveyor_2_objplace> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_1_descr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Unimat + FlashForge Inventor" .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#GravityConveyor_3>
+        a       <https://w3id.org/ontoeng/factory#Conveyor> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#description_IfcRoot>
+                <https://w3id.org/ontoeng/VL/SmartFactory#GravityConveyor_3_descr> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/SmartFactory#GravityConveyor_3_objplace> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#UnimatLathe_idleComp>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory>
+        a       <http://www.w3.org/2002/07/owl#Ontology> ;
+        <http://www.w3.org/2002/07/owl#imports>
+                <https://w3id.org/ontoeng/factory> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#KUKA_KR3_R540_initSt>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#BeltConveyor_1_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
+                "4200 -13200 0" ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
+                "-3.4914813388431334e-15 1 0; -1 -3.4914813388431334e-15 0; 0 0 1" .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_extrepr>
+        a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_extref> ;
+        <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
+                <https://w3id.org/ontoeng/VL/SmartFactory#MatrixProductionCell_B_reprLU> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#UnimatMill_idleComp>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_2_finished>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Final> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#ScrewDriver>
+        a       <https://w3id.org/ontoeng/factory#Tool> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#description_IfcRoot>
+                <https://w3id.org/ontoeng/VL/SmartFactory#ScrewDriver_descr> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/SmartFactory#ScrewDriver_objplace> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_reprlist>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/list#hasContents>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_shaperepr> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Chair_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/SmartFactory#Chair_relplace> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#InnoLabBuilding_extref>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "InnovationLab.glb" .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#Printer3D_2_idleComp>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> .
+
+<https://w3id.org/ontoeng/VL/SmartFactory#KUKA_KR3_R540_guardTrIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/VL/SmartFactory#KUKA_KR3_R540_startOp> .
